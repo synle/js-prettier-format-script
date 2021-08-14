@@ -20,5 +20,10 @@ npx prettier --write *.md && \
 npx prettier --write --parser json *.json && \
 echo 'Done formatting'
 """ > format.sh && chmod +x format.sh && \
-npm i --save-dev @trivago/prettier-plugin-sort-imports
+npm i --save-dev @trivago/prettier-plugin-sort-imports && \
+echo """
+Done bootstraping - Adding this to your package.json
+================================================
+"format": "sh format.sh",
+"""
 ```
