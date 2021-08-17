@@ -27,3 +27,9 @@ Done bootstraping - Adding this to your package.json
 "format": "sh format.sh",
 """
 ```
+
+
+### Minor sass path
+```
+SASS_PATH=./node_modules:./src
+```
