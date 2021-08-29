@@ -1,16 +1,17 @@
 # js-prettier-format-script
 prettier-format-script
 
-
 ```
 echo """
 // @trivago/prettier-plugin-sort-imports
 module.exports = {
   tabWidth: 2,
+  printWidth: 100,
   bracketSpacing: true,
   jsxBracketSameLine: true,
   singleQuote: true,
   trailingComma: 'all',
+  arrowParens: 'always',
   importOrder: ['^[a-zA-Z0-9]+$', '^[@]', '^[a-zA-Z]', '^[./]'],
 };
 """ > '.prettierrc.js' && \
